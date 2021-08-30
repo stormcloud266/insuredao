@@ -11,8 +11,6 @@ const Container = ({
 	sectionTop,
 	sectionBottom,
 	textBlock,
-	bgDark,
-	bgAccent,
 	isSection,
 	className,
 	children,
@@ -25,8 +23,6 @@ const Container = ({
 		sectionTop && styles.sectionTop,
 		sectionBottom && styles.sectionBottom,
 		textBlock && styles.textBlock,
-		bgDark && styles.bgDark,
-		bgAccent && styles.bgAccent,
 		className && className
 	)
 
@@ -47,8 +43,6 @@ Container.propTypes = {
 	sectionTop: PropTypes.bool,
 	sectionBottom: PropTypes.bool,
 	textBlock: PropTypes.bool,
-	bgDark: PropTypes.bool,
-	bgAccent: PropTypes.bool,
 	isSection: PropTypes.bool,
 	className: PropTypes.string,
 	children: PropTypes.node.isRequired,
