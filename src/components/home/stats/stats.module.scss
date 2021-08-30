@@ -1,0 +1,22 @@
+@import '../../global/layout/variables';
+
+.container {
+	display: flex;
+}
+
+.row {
+	justify-content: center;
+}
+
+.column {
+	text-align: center;
+}
+
+.number {
+	font-size: $font-size-6;
+	font-weight: 700;
+}
+
+.label {
+	color: $color-green;
+}
