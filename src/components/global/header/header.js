@@ -1,13 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'gatsby'
-import NavLinks from '@global/navLinks'
-import { Hamburger, Times, Logo } from '@images/icons'
-import { Container } from '@UI'
+import { Logo } from '@images/icons'
+import { Container, Button } from '@UI'
 import * as styles from './header.module.scss'
 
 const Header = () => {
-	const [isOpen, toggleNav] = useState(false)
-
 	return (
 		<header className={styles.header}>
 			<Container wrapper className={styles.container}>
@@ -15,13 +12,9 @@ const Header = () => {
 					<Logo />
 				</Link>
 
-				<button className={styles.toggle} onClick={() => toggleNav(!isOpen)}>
-					{isOpen ? <Times /> : <Hamburger />}
-				</button>
-
-				<nav className={`${styles.nav} ${isOpen ? styles.open : ''}`}>
-					<NavLinks />
-				</nav>
+				<Button small href='https://example.com'>
+					Launch App
+				</Button>
 			</Container>
 		</header>
 	)

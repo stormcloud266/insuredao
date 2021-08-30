@@ -1,0 +1,28 @@
+@import '../../global/layout/variables';
+
+.container {
+	min-height: 100vh;
+	background-color: rgb(73, 143, 223);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.subtitle {
+	color: $color-text-dark;
+	font-size: $font-size-2;
+	max-width: 60rem;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.buttonContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 3.6rem;
+
+	a:first-child {
+		margin-right: 2rem;
+	}
+}
