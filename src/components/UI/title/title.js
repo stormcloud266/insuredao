@@ -2,10 +2,13 @@ import React from 'react'
 import classnames from 'classnames'
 import * as styles from './title.module.scss'
 
-const Title = ({ tag, center, black, children }) => {
+const Title = ({ tag, center, black, sm, lg, weightMd, children }) => {
 	const classes = classnames(
 		center && styles.center,
 		black && styles.black,
+		sm && styles.sm,
+		lg && styles.lg,
+		weightMd && styles.weightMd,
 		styles.title
 	)
 

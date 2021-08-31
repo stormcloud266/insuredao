@@ -1,8 +1,9 @@
 @import '../../global/layout/variables';
 
 .title {
-	font-size: $font-size-6;
+	font-size: $font-size-48;
 	margin-bottom: 2.4rem;
+	font-weight: 700;
 }
 
 .center {
@@ -11,4 +12,16 @@
 
 .black {
 	color: $color-text-dark-primary;
+}
+
+.sm {
+	font-size: $font-size-36;
+}
+
+.lg {
+	font-size: $font-size-60;
+}
+
+.weightMd {
+	font-weight: 500;
 }
