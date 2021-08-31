@@ -10,6 +10,7 @@ const Button = ({
 	white,
 	green,
 	small,
+	className,
 	children,
 	...rest
 }) => {
@@ -18,7 +19,8 @@ const Button = ({
 		white && styles.white,
 		green && styles.green,
 		small && styles.small,
-		styles.button
+		styles.button,
+		className
 	)
 
 	if (href) {
