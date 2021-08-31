@@ -2,10 +2,11 @@ import React from 'react'
 import classnames from 'classnames'
 import * as styles from './title.module.scss'
 
-const Title = ({ tag, center, black, sm, lg, weightMd, children }) => {
+const Title = ({ tag, center, black, sm, lg, weightMd, margin, children }) => {
 	const classes = classnames(
 		center && styles.center,
 		black && styles.black,
+		margin && styles.margin,
 		sm && styles.sm,
 		lg && styles.lg,
 		weightMd && styles.weightMd,
@@ -23,6 +24,8 @@ const Title = ({ tag, center, black, sm, lg, weightMd, children }) => {
 			return <h5 className={classes}>{children}</h5>
 		case 'h6':
 			return <h6 className={classes}>{children}</h6>
+		case 'p':
+			return <p className={classes}>{children}</p>
 		default:
 			return <h2 className={classes}>{children}</h2>
 	}

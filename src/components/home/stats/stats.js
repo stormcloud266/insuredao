@@ -5,19 +5,27 @@ import * as styles from './stats.module.scss'
 const Stats = () => {
 	return (
 		<Container wrapper>
-			<Title center>Insurance For Everyone!</Title>
+			<Title center sm weightMd margin>
+				Insurance For Everyone!
+			</Title>
 
 			<Flex autoLayout className={styles.row}>
 				<div className={styles.column}>
-					<p className={styles.number}>50+</p>
+					<Title center tag='p'>
+						50+
+					</Title>
 					<p className={styles.label}>Insurance Products</p>
 				</div>
 				<div className={styles.column}>
-					<p className={styles.number}>50+</p>
+					<Title center tag='p'>
+						50+
+					</Title>
 					<p className={styles.label}>Insurance Products</p>
 				</div>
 				<div className={styles.column}>
-					<p className={styles.number}>50+</p>
+					<Title center tag='p'>
+						50+
+					</Title>
 					<p className={styles.label}>Insurance Products</p>
 				</div>
 			</Flex>

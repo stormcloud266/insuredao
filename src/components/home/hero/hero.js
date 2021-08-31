@@ -6,7 +6,7 @@ const Hero = () => {
 	return (
 		<section className={styles.container}>
 			<Container wrapper>
-				<Title black center tag='h1'>
+				<Title black center margin tag='h1'>
 					The Open Insurance Protocol
 				</Title>
 				<p className={styles.subtitle}>
