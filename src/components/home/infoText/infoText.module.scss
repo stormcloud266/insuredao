@@ -1,0 +1,16 @@
+@import '../../global/layout/variables';
+
+.textContainer {
+	max-width: $wrapper-small-width;
+	margin-right: 2.8rem;
+}
+
+.body {
+	color: $color-text-light-tertiary;
+}
+
+.iconContainer {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+}

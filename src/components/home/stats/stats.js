@@ -4,7 +4,7 @@ import * as styles from './stats.module.scss'
 
 const Stats = () => {
 	return (
-		<Container wrapper>
+		<Container wrapper section isSection>
 			<Title center sm weightMd margin>
 				Insurance For Everyone!
 			</Title>
