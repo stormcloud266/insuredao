@@ -80,8 +80,8 @@ const Cards = () => {
 	]
 
 	return (
-		<Container wrapper sectionBottom>
-			<Flex autoLayout>
+		<Container wrapperSmOnMd sectionBottom>
+			<Flex autoLayout collapseOnMd>
 				{data.map((item) => {
 					const classes = classnames(styles[item.color], styles.card)
 
@@ -91,17 +91,19 @@ const Cards = () => {
 								<p className={styles.type}>{item.type}</p>
 								<h3 className={styles.title}>{item.title}</h3>
 								<div className={styles.body}>{item.body}</div>
+							</div>
+							<div>
 								<ul className={styles.list}>
 									{item.checklist.map((listItem) => (
 										<li key={listItem}>
-											{<Check />} {listItem}
+											<Check /> {listItem}
 										</li>
 									))}
 								</ul>
+								<Button to='/' className={styles.button} square>
+									{item.buttonText} &rarr;
+								</Button>
 							</div>
-							<Button to='/' className={styles.button} square>
-								{item.buttonText} &rarr;
-							</Button>
 						</div>
 					)
 				})}

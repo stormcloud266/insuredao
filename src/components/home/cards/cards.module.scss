@@ -32,9 +32,12 @@
 	font-size: $font-size-16;
 	li {
 		margin-bottom: 2rem;
+		display: flex;
 	}
 	svg {
 		margin-right: 1.4rem;
+		margin-top: 0.6rem;
+		display: block;
 	}
 }
 
@@ -84,3 +87,9 @@
 		border-color: hsla(249, 90%, 96%, 1);
 	}
 }
+
+@media only screen and (max-width: $breakpoint-xsmall) {
+	.card {
+		padding: 1.8rem;
+	}
+} // end of xsmall
