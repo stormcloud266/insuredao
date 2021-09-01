@@ -24,3 +24,15 @@
 	text-align: center;
 	font-size: $font-size-24;
 }
+
+@media only screen and (max-width: $breakpoint-medium) {
+	.container {
+		padding-bottom: 20rem;
+	}
+} // end of whenMedium
+
+@media only screen and (max-width: $breakpoint-small) {
+	.container {
+		padding-bottom: 14rem;
+	}
+} // end of whenSmall
