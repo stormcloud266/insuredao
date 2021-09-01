@@ -17,5 +17,15 @@
 	margin-left: 2.8rem;
 }
 
-@media only screen and (max-width: 56.25em) {
-} // end of whenMedium
+@media only screen and (max-width: $breakpoint-small) {
+	.inner {
+		align-items: center;
+		text-align: center;
+	}
+	.socialContainer {
+		margin-top: 2rem;
+		a {
+			margin: 0 1.4rem;
+		}
+	}
+} // end of whenSmall
