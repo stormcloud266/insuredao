@@ -2,7 +2,7 @@ const path = require('path')
 
 module.exports = {
 	siteMetadata: {
-		title: 'Gatsby Starter Stormcloud',
+		title: 'InsureDAO',
 		siteUrl: `https://www.gatsbyjs.com`,
 		description: `Gatsby v3 starter for getting website projects up and running fast.`,
 	},
@@ -20,14 +20,6 @@ module.exports = {
 		'gatsby-plugin-mdx',
 		'gatsby-plugin-sharp',
 		'gatsby-transformer-sharp',
-		{
-			resolve: 'gatsby-plugin-web-font-loader',
-			options: {
-				google: {
-					families: ['Droid Sans', 'Droid Serif'],
-				},
-			},
-		},
 		{
 			resolve: `gatsby-plugin-gdpr-cookies`,
 			options: {
@@ -48,6 +40,14 @@ module.exports = {
 				// defines the environments where the tracking should be available  - default is ["production"]
 				environments: ['production'],
 			},
+		},
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'static',
+				path: './static',
+			},
+			__key: 'static',
 		},
 		{
 			resolve: 'gatsby-source-filesystem',

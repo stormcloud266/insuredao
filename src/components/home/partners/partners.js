@@ -6,7 +6,7 @@ import * as styles from './partners.module.scss'
 const Partners = () => {
 	return (
 		<Container wrapper section>
-			<Title sm weightMed>
+			<Title sm weightMd>
 				Partnered with:
 			</Title>
 		</Container>

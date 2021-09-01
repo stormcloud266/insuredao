@@ -6,7 +6,7 @@ import * as styles from './backers.module.scss'
 const Backers = () => {
 	return (
 		<Container wrapper section>
-			<Title sm weightMed>
+			<Title sm weightMd>
 				Backed by:
 			</Title>
 		</Container>
