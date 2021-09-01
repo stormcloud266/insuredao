@@ -1,0 +1,32 @@
+@import '../../global/layout/variables';
+
+.teamContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	font-size: $font-size-18;
+}
+
+.profileContainer {
+	flex-basis: 33.333%;
+}
+
+.name {
+	font-weight: 700;
+}
+
+.role {
+	color: $color-green;
+	font-weight: 500;
+}
+
+.socialContainer {
+	a {
+		color: hsla(215, 14%, 34%, 1);
+		margin: 1rem;
+		&:hover {
+			color: $color-green;
+		}
+	}
+}

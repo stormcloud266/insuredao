@@ -7,9 +7,10 @@ import {
 	InfoText,
 	Cards,
 	Works,
-	Cta,
 	Backers,
 	Partners,
+	Team,
+	Cta,
 } from '@components/home'
 
 const IndexPage = () => (
@@ -22,6 +23,7 @@ const IndexPage = () => (
 		<Works />
 		<Backers />
 		<Partners />
+		<Team />
 		<Cta />
 	</Layout>
 )
