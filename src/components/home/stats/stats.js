@@ -3,31 +3,35 @@ import { Container, Title, Button, Flex } from '@UI'
 import * as styles from './stats.module.scss'
 
 const Stats = () => {
+	const data = [
+		{
+			number: '50+',
+			label: 'Insurance Products',
+		},
+		{
+			number: '$5.3m',
+			label: 'Total Value Locked',
+		},
+		{
+			number: '28.02%',
+			label: 'Average Yield',
+		},
+	]
 	return (
 		<Container wrapper section isSection>
-			<Title center sm weightMd margin>
+			<Title center sm weightMd>
 				Insurance For Everyone!
 			</Title>
 
 			<Flex autoLayout className={styles.row}>
-				<div className={styles.column}>
-					<Title center tag='p'>
-						50+
-					</Title>
-					<p className={styles.label}>Insurance Products</p>
-				</div>
-				<div className={styles.column}>
-					<Title center tag='p'>
-						50+
-					</Title>
-					<p className={styles.label}>Insurance Products</p>
-				</div>
-				<div className={styles.column}>
-					<Title center tag='p'>
-						50+
-					</Title>
-					<p className={styles.label}>Insurance Products</p>
-				</div>
+				{data.map((item) => (
+					<div className={styles.column}>
+						<Title center tag='p'>
+							{item.number}
+						</Title>
+						<p className={styles.label}>{item.label}</p>
+					</div>
+				))}
 			</Flex>
 		</Container>
 	)

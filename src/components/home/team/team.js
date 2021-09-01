@@ -50,7 +50,7 @@ const Team = () => {
 			<div className={styles.teamContainer}>
 				{team.map(({ name, role, imageName, twitter, linkedin }) => {
 					return (
-						<div className={styles.profileContainer}>
+						<div className={styles.profileContainer} key={name}>
 							<p className={styles.name}>{name}</p>
 							<p className={styles.role}>{role}</p>
 							<div className={styles.socialContainer}>
