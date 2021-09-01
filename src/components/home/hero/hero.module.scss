@@ -29,6 +29,12 @@
 	}
 }
 
+@media only screen and (max-width: $breakpoint-small) {
+	.subtitle {
+		font-size: $font-size-18;
+	}
+} // end of whenSmall
+
 @media only screen and (max-width: $breakpoint-xsmall) {
 	.buttonContainer {
 		flex-direction: column;
@@ -38,4 +44,4 @@
 			margin-bottom: 2rem;
 		}
 	}
-} // end of xsmall
+} // end of whenXsmall
