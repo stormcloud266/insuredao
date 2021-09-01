@@ -52,6 +52,14 @@ module.exports = {
 		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
+				name: 'avatars',
+				path: './src/assets/images/avatars',
+			},
+			__key: 'avatars',
+		},
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
 				name: 'images',
 				path: './src/assets/images/',
 			},

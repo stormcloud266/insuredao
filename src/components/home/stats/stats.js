@@ -25,7 +25,7 @@ const Stats = () => {
 
 			<Flex autoLayout className={styles.row}>
 				{data.map((item) => (
-					<div className={styles.column}>
+					<div className={styles.column} key={item.label}>
 						<Title center tag='p'>
 							{item.number}
 						</Title>
