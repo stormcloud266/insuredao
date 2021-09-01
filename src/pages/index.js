@@ -1,7 +1,16 @@
 import React from 'react'
 import Layout from '@global/layout/layout'
 import Seo from '@global/seo'
-import { Hero, Stats, InfoText, Cards, Cta } from '@components/home'
+import {
+	Hero,
+	Stats,
+	InfoText,
+	Cards,
+	Works,
+	Cta,
+	Backers,
+	Partners,
+} from '@components/home'
 
 const IndexPage = () => (
 	<Layout>
@@ -10,6 +19,9 @@ const IndexPage = () => (
 		<Stats />
 		<InfoText />
 		<Cards />
+		<Works />
+		<Backers />
+		<Partners />
 		<Cta />
 	</Layout>
 )
