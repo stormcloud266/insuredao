@@ -28,3 +28,27 @@
 .weightMd {
 	font-weight: 500;
 }
+
+@media only screen and (max-width: $breakpoint-medium) {
+	.sm {
+		font-size: $font-size-30;
+	}
+	.title {
+		font-size: $font-size-36;
+	}
+	.lg {
+		font-size: $font-size-48;
+	}
+} // end of whenMedium
+
+@media only screen and (max-width: $breakpoint-small) {
+	.sm {
+		font-size: $font-size-27;
+	}
+	.title {
+		font-size: $font-size-30;
+	}
+	.lg {
+		font-size: $font-size-36;
+	}
+} // end of whenSmall
