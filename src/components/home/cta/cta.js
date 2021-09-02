@@ -11,7 +11,7 @@ const Cta = () => {
 					Join in with the conversation on Discord...
 				</Title>
 				<Button
-					href='https://example.com'
+					href='https://discord.gg/8BA5f5rurq'
 					green
 					square
 					className={styles.button}

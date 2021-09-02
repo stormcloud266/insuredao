@@ -15,7 +15,7 @@ const Hero = () => {
 				</p>
 				<div className={styles.buttonContainer}>
 					<Button href='https://example.com'>Launch App</Button>
-					<Button href='https://example.com' white>
+					<Button href='https://insuredao.gitbook.io/insuredao/' white>
 						Explore Docs
 					</Button>
 				</div>
