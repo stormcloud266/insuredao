@@ -10,6 +10,7 @@ const Title = ({
 	lg,
 	weightMd,
 	margin,
+	className,
 	children,
 	...rest
 }) => {
@@ -20,7 +21,8 @@ const Title = ({
 		sm && styles.sm,
 		lg && styles.lg,
 		weightMd && styles.weightMd,
-		styles.title
+		styles.title,
+		className
 	)
 
 	switch (tag) {

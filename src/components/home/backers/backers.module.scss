@@ -1,5 +1,19 @@
 @import '../../global/layout/variables';
 
-.textContainer {
-	text-align: center;
+.title {
+	margin-bottom: 9rem;
+}
+
+.logoContainer {
+	color: #f3f4f6;
+	display: flex;
+	align-self: center;
+	justify-self: center;
+	transition: color 0.3s;
+}
+
+@media only screen and (max-width: $breakpoint-small) {
+	.logoContainer {
+		max-width: 12rem;
+	}
 }

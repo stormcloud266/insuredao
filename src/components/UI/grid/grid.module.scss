@@ -3,44 +3,19 @@
 .grid {
 	display: grid;
 	gap: 2rem;
+	grid-template-columns: repeat(4, 1fr);
+	row-gap: 12rem;
 }
 
-@for $i from 1 through 6 {
-	.grid#{$i} {
-		grid-template-columns: repeat($i, 1fr);
+@media only screen and (max-width: $breakpoint-medium) {
+	.grid {
+		grid-template-columns: repeat(3, 1fr);
+		row-gap: 9rem;
 	}
 }
 
-.gridGapLg {
-	gap: 3.2rem;
-}
-
-.gridGapSm {
-	gap: 0.8rem;
-}
-
-@media only screen and (max-width: 56.25em) {
-	@for $i from 1 through 3 {
-		.grid#{$i} {
-			grid-template-columns: repeat(2, 1fr);
-		}
-	}
-	@for $i from 4 through 6 {
-		.grid#{$i} {
-			grid-template-columns: repeat(3, 1fr);
-		}
-	}
-}
-
-@media only screen and (max-width: 37.5em) {
-	@for $i from 1 through 3 {
-		.grid#{$i} {
-			grid-template-columns: repeat(1, 1fr);
-		}
-	}
-	@for $i from 4 through 6 {
-		.grid#{$i} {
-			grid-template-columns: repeat(2, 1fr);
-		}
+@media only screen and (max-width: $breakpoint-small) {
+	.grid {
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
