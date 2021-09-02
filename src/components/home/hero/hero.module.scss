@@ -1,13 +1,15 @@
 @import '../../global/layout/variables';
 
+.background {
+	background-position: center bottom;
+	background-size: cover;
+}
+
 .container {
 	min-height: 76rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: url(../../../assets/images/InsureDAO_hero.png);
-	background-position: center bottom;
-	background-size: cover;
 }
 
 .subtitle {
