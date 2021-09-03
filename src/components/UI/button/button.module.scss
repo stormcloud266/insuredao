@@ -10,11 +10,11 @@
 	border-radius: 76px;
 	outline: none;
 	display: inline-block;
-	transition: all 0.2s;
+	transition: all 0.3s;
 
 	&:hover {
-		background-color: darken($color-blue, 10%);
-		color: $color-text-light-tertiary;
+		background-color: white;
+		color: $color-blue;
 	}
 }
 
@@ -25,10 +25,18 @@
 .white {
 	color: $color-blue;
 	background-color: white;
+	&:hover {
+		background-color: $color-blue;
+		color: white;
+	}
 }
 
 .green {
 	background-color: $color-green;
+	&:hover {
+		background-color: white;
+		color: $color-green;
+	}
 }
 
 .small {
