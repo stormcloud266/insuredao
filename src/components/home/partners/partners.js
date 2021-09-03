@@ -1,4 +1,5 @@
 import React from 'react'
+import { Fade } from 'react-awesome-reveal'
 import { Container, Title, Grid } from '@UI'
 import * as styles from './partners.module.scss'
 import { Quantumstamp, Solidified, Fracton, Integral } from '@images/logos'
@@ -28,17 +29,17 @@ const Partners = () => {
 				Partnered with:
 			</Title>
 			<Grid>
-				{data.map(({ logo, url }, i) => {
-					return url ? (
-						<a href={url} key={i} className={styles.logoContainer}>
-							{logo}
-						</a>
-					) : (
-						<span key={i} className={styles.logoContainer}>
-							{logo}
-						</span>
-					)
-				})}
+				{data.map(({ logo, url }, i) => (
+					<Fade key={i} triggerOnce fraction={0.4}>
+						{url ? (
+							<a href={url} className={styles.logoContainer}>
+								{logo}
+							</a>
+						) : (
+							<span className={styles.logoContainer}>{logo}</span>
+						)}
+					</Fade>
+				))}
 			</Grid>
 		</Container>
 	)

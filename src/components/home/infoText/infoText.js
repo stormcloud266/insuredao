@@ -1,4 +1,5 @@
 import React from 'react'
+import { Fade } from 'react-awesome-reveal'
 import { Container, Title, Flex } from '@UI'
 import { Pyramid } from '@images/icons'
 import * as styles from './infoText.module.scss'
@@ -8,10 +9,12 @@ const InfoText = () => {
 		<Container wrapper section isSection>
 			<Flex>
 				<div className={styles.textContainer}>
-					<Title margin>
-						Insurance is the masterpiece of DeFi scalability - we stabilize the
-						entire ecosystem
-					</Title>
+					<Fade triggerOnce fraction={0.2}>
+						<Title margin>
+							Insurance is the masterpiece of DeFi scalability - we stabilize
+							the entire ecosystem
+						</Title>
+					</Fade>
 					<p className={styles.body}>
 						What makes InsureDAO different is our ability to handle everything
 						from creating and selling insurance, to managing surplus funds. We
@@ -22,7 +25,9 @@ const InfoText = () => {
 				</div>
 
 				<div className={styles.iconContainer}>
-					<Pyramid />
+					<Fade triggerOnce fraction={0.2}>
+						<Pyramid />
+					</Fade>
 				</div>
 			</Flex>
 		</Container>

@@ -1,5 +1,6 @@
 import React from 'react'
 import classnames from 'classnames'
+import { Fade } from 'react-awesome-reveal'
 import { Container, Flex, Button } from '@UI'
 import { Check } from '@images/icons'
 import * as styles from './cards.module.scss'
@@ -93,13 +94,15 @@ const Cards = () => {
 								<div className={styles.body}>{item.body}</div>
 							</div>
 							<div>
-								<ul className={styles.list}>
-									{item.checklist.map((listItem) => (
-										<li key={listItem}>
-											<Check /> {listItem}
-										</li>
-									))}
-								</ul>
+								<Fade cascade damping={0.2}>
+									<ul className={styles.list}>
+										{item.checklist.map((listItem) => (
+											<li key={listItem}>
+												<Check /> {listItem}
+											</li>
+										))}
+									</ul>
+								</Fade>
 								<Button to='/' className={styles.button} square>
 									{item.buttonText} <span>&rarr;</span>
 								</Button>

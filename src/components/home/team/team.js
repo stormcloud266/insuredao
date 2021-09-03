@@ -1,6 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { Fade } from 'react-awesome-reveal'
 import { Container, Title } from '@UI'
 import { Twitter, LinkedIn } from '@images/icons'
 import * as styles from './team.module.scss'
@@ -74,17 +75,21 @@ const Team = () => {
 					const image = getImage(imageMatch.node)
 					return (
 						<div className={styles.profileContainer} key={name}>
-							<GatsbyImage image={image} alt={name} />
-							<p className={styles.name}>{name}</p>
-							<p className={styles.role}>{role}</p>
-							<div className={styles.socialContainer}>
-								<a href='https://example.com'>
-									<Twitter />
-								</a>
-								<a href='https://example.com'>
-									<LinkedIn />
-								</a>
-							</div>
+							<Fade triggerOnce fraction={0.2}>
+								<div>
+									<GatsbyImage image={image} alt={name} />
+									<p className={styles.name}>{name}</p>
+									<p className={styles.role}>{role}</p>
+									<div className={styles.socialContainer}>
+										<a href='https://example.com'>
+											<Twitter />
+										</a>
+										<a href='https://example.com'>
+											<LinkedIn />
+										</a>
+									</div>
+								</div>
+							</Fade>
 						</div>
 					)
 				})}
