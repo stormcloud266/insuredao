@@ -47,6 +47,17 @@
 	border-radius: 8px;
 	padding: 1rem;
 	margin-top: 1rem;
+	span {
+		display: inline-block;
+		transition: transform 0.3s;
+		margin-left: 0.4rem;
+	}
+
+	&:hover {
+		span {
+			transform: translateX(5px);
+		}
+	}
 }
 
 .green {
@@ -57,7 +68,10 @@
 	}
 	.button {
 		background-color: $color-green;
-		border-color: $color-green;
+		&:hover {
+			color: white;
+			background-color: darken($color-green, 10%);
+		}
 	}
 }
 
@@ -70,7 +84,11 @@
 	}
 	.button {
 		background-color: hsla(233, 89%, 96%, 1);
-		border-color: hsla(233, 89%, 96%, 1);
+
+		&:hover {
+			color: white;
+			background-color: $color-blue;
+		}
 	}
 }
 
@@ -84,7 +102,10 @@
 
 	.button {
 		background-color: hsla(249, 90%, 96%, 1);
-		border-color: hsla(249, 90%, 96%, 1);
+		&:hover {
+			color: white;
+			background-color: $color-purple;
+		}
 	}
 }
 

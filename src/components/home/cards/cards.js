@@ -101,7 +101,7 @@ const Cards = () => {
 									))}
 								</ul>
 								<Button to='/' className={styles.button} square>
-									{item.buttonText} &rarr;
+									{item.buttonText} <span>&rarr;</span>
 								</Button>
 							</div>
 						</div>
