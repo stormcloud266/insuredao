@@ -94,7 +94,7 @@ const Cards = () => {
 								<div className={styles.body}>{item.body}</div>
 							</div>
 							<div>
-								<Fade cascade damping={0.2}>
+								<Fade cascade damping={0.2} triggerOnce>
 									<ul className={styles.list}>
 										{item.checklist.map((listItem) => (
 											<li key={listItem}>
