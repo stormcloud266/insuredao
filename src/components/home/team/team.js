@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import { Container, Title, Button, Flex } from '@UI'
+import { Container, Title } from '@UI'
 import { Twitter, LinkedIn } from '@images/icons'
 import * as styles from './team.module.scss'
 

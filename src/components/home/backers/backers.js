@@ -1,5 +1,4 @@
 import React from 'react'
-import classnames from 'classnames'
 import { Container, Title, Grid } from '@UI'
 import * as styles from './backers.module.scss'
 import {

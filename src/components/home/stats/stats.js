@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Title, Button, Flex } from '@UI'
+import { Container, Title, Flex } from '@UI'
 import * as styles from './stats.module.scss'
 
 const Stats = () => {

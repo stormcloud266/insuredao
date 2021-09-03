@@ -39,6 +39,9 @@
 	.subtitle {
 		font-size: $font-size-18;
 	}
+	.container {
+		min-height: 64rem;
+	}
 } // end of whenSmall
 
 @media only screen and (max-width: $breakpoint-xsmall) {

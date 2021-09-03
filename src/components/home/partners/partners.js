@@ -1,8 +1,8 @@
 import React from 'react'
-import classnames from 'classnames'
 import { Container, Title, Grid } from '@UI'
 import * as styles from './partners.module.scss'
 import { Quantumstamp, Solidified, Fracton, Integral } from '@images/logos'
+
 const Partners = () => {
 	const data = [
 		{
