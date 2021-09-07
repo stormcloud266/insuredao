@@ -107,7 +107,7 @@ const Team = () => {
 	]
 	return (
 		<Container wrapper section isSection>
-			<Title center lg margin>
+			<Title center lg className={styles.title}>
 				Meet the team
 			</Title>
 

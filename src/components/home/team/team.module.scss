@@ -8,14 +8,18 @@
 	font-size: $font-size-18;
 }
 
+.title {
+	margin-bottom: 4rem;
+}
+
 .profileContainer {
 	flex-basis: 33.333%;
-	padding: 2rem 1rem 0;
+	padding: 4rem 1rem 0;
 }
 
 .name {
 	font-weight: 700;
-	margin-top: 1rem;
+	margin-top: 2.2rem;
 }
 
 .role {
@@ -24,6 +28,7 @@
 }
 
 .socialContainer {
+	margin-top: 0.8rem;
 	a {
 		color: hsla(215, 14%, 34%, 1);
 		margin: 1rem;
