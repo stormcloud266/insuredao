@@ -30,7 +30,7 @@ const Cards = () => {
 				'Available anytime',
 			],
 			buttonText: 'Buy Insurance',
-			link: 'https://example.com',
+			url: 'https://insuredao.gitbook.io/insuredao/guides/get-insured',
 		},
 		{
 			color: 'blue',
@@ -55,7 +55,7 @@ const Cards = () => {
 				'Maximize capital efficiency',
 			],
 			buttonText: 'Fund Now',
-			link: 'https://example.com',
+			url: 'https://insuredao.gitbook.io/insuredao/guides/earn-insurance-premium',
 		},
 		{
 			color: 'purple',
@@ -76,7 +76,7 @@ const Cards = () => {
 			),
 			checklist: ['Free creation', 'Quick integration', 'No management costs'],
 			buttonText: 'Build',
-			link: 'https://example.com',
+			url: 'https://insuredao.gitbook.io/insuredao/guides/create-insurance-pool',
 		},
 	]
 
@@ -103,7 +103,7 @@ const Cards = () => {
 										))}
 									</ul>
 								</Fade>
-								<Button to='/' className={styles.button} square>
+								<Button href={item.url} className={styles.button} square>
 									{item.buttonText} <span>&rarr;</span>
 								</Button>
 							</div>

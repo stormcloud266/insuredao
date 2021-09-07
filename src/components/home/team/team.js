@@ -126,7 +126,7 @@ const Team = () => {
 									<p className={styles.role}>{role}</p>
 									<div className={styles.socialContainer}>
 										{links.map(({ url, icon }) => (
-											<a href={url} ke={url} target='_blank' rel='noreferrer'>
+											<a href={url} key={url} target='_blank' rel='noreferrer'>
 												{icon}
 											</a>
 										))}

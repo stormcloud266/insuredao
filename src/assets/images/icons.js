@@ -36,7 +36,7 @@ export const Pyramid = () => (
 export const Github = () => (
 	<svg
 		width='20'
-		height='auto'
+		height='20.5'
 		viewBox='0 0 256 250'
 		fill='none'
 		xmlns='http://www.w3.org/2000/svg'

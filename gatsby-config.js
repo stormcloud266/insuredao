@@ -3,8 +3,8 @@ const path = require('path')
 module.exports = {
 	siteMetadata: {
 		title: 'InsureDAO',
-		siteUrl: `https://www.gatsbyjs.com`,
-		description: `Gatsby v3 starter for getting website projects up and running fast.`,
+		siteUrl: `https://insuredao.fi`,
+		description: `InsureDAO is the open insurance market protocol.`,
 	},
 	plugins: [
 		'gatsby-plugin-sass',
