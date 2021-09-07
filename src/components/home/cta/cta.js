@@ -20,7 +20,6 @@ const Cta = () => {
 				<Button
 					href='https://discord.gg/8BA5f5rurq'
 					green
-					square
 					className={styles.button}
 				>
 					Join Us...

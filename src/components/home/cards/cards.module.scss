@@ -47,6 +47,7 @@
 	border-radius: 8px;
 	padding: 1rem;
 	margin-top: 1rem;
+	box-shadow: none;
 	span {
 		display: inline-block;
 		transition: transform 0.3s;
@@ -67,10 +68,11 @@
 		color: $color-green;
 	}
 	.button {
-		background-color: $color-green;
+		color: $color-green;
+		background-color: hsla(179, 80%, 92%, 1);
 		&:hover {
 			color: white;
-			background-color: darken($color-green, 10%);
+			background-color: $color-green;
 		}
 	}
 }
