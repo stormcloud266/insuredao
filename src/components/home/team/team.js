@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { Fade } from 'react-awesome-reveal'
 import { Container, Title } from '@UI'
-import { Twitter, LinkedIn } from '@images/icons'
+import { Twitter, LinkedIn, Github } from '@images/icons'
 import * as styles from './team.module.scss'
 
 const Team = () => {
@@ -29,36 +29,80 @@ const Team = () => {
 			name: 'Kohshi Shiba',
 			role: 'Founder / Developer',
 			imageName: 'kohshi-shiba',
-			twitter: '',
-			linkedin: '',
+			links: [
+				{
+					url: 'https://twitter.com/KOHSHIBA',
+					icon: <Twitter />,
+				},
+				{
+					url: 'https://linkedin.com/in/kohshiba',
+					icon: <LinkedIn />,
+				},
+				{
+					url: 'https://github.com/kohshiba',
+					icon: <Github />,
+				},
+			],
 		},
 		{
 			name: 'Daisuke Iwase',
 			role: 'Chairman / Insurance Expert',
 			imageName: 'daisuke-iwase',
-			twitter: '',
-			linkedin: '',
+			links: [
+				{
+					url: 'https://twitter.com/totodaisuke',
+					icon: <Twitter />,
+				},
+				{
+					url: 'https://linkedin.com/in/daisuke-iwase-bb413215',
+					icon: <LinkedIn />,
+				},
+			],
 		},
 		{
 			name: 'Shun Oikawa',
 			role: 'Co-founder / Lead Developer',
 			imageName: 'shun-oikawa',
-			twitter: '',
-			linkedin: '',
+			links: [
+				{
+					url: 'https://twitter.com/oishun1112',
+					icon: <Twitter />,
+				},
+				{
+					url: 'https://github.com/oishun1112',
+					icon: <Github />,
+				},
+			],
 		},
 		{
 			name: 'Rubio Kishigami',
 			role: 'Co-founder / Business Development',
 			imageName: 'rubio-kishigami',
-			twitter: '',
-			linkedin: '',
+			links: [
+				{
+					url: 'https://twitter.com/rubiokishi1',
+					icon: <Twitter />,
+				},
+				{
+					url: 'https://linkedin.com/in/rubio-kishigami-31b029160',
+					icon: <LinkedIn />,
+				},
+			],
 		},
 		{
 			name: 'Motoki Takahashi',
 			role: 'Co-founder / Marketing',
 			imageName: 'motoki-takahashi',
-			twitter: '',
-			linkedin: '',
+			links: [
+				{
+					url: 'https://twitter.com/motoki304',
+					icon: <Twitter />,
+				},
+				{
+					url: 'https://linkedin.com/in/motoki-takahashi-778225203',
+					icon: <LinkedIn />,
+				},
+			],
 		},
 	]
 	return (
@@ -68,7 +112,7 @@ const Team = () => {
 			</Title>
 
 			<div className={styles.teamContainer}>
-				{team.map(({ name, role, imageName, twitter, linkedin }) => {
+				{team.map(({ name, role, imageName, links }) => {
 					const imageMatch = images.find(
 						({ node: image }) => image.name === imageName
 					)
@@ -81,12 +125,11 @@ const Team = () => {
 									<p className={styles.name}>{name}</p>
 									<p className={styles.role}>{role}</p>
 									<div className={styles.socialContainer}>
-										<a href='https://example.com'>
-											<Twitter />
-										</a>
-										<a href='https://example.com'>
-											<LinkedIn />
-										</a>
+										{links.map(({ url, icon }) => (
+											<a href={url} ke={url} target='_blank' rel='noreferrer'>
+												{icon}
+											</a>
+										))}
 									</div>
 								</div>
 							</Fade>
