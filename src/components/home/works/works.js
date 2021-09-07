@@ -11,7 +11,11 @@ const Works = () => {
 					<Title lg>How it all works?</Title>
 				</Fade>
 				<p>InsureDAO provides three functions:</p>
-				<p>InsureDAO Build InsureDAO Market InsureDAO Investments</p>
+				<ul className={styles.list}>
+					<li>InsureDAO Build</li>
+					<li>InsureDAO Market</li>
+					<li>InsureDAO Investments</li>
+				</ul>
 			</div>
 		</Container>
 	)

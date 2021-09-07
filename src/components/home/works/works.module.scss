@@ -2,4 +2,31 @@
 
 .textContainer {
 	text-align: center;
+
+	p {
+		color: $color-text-light-tertiary;
+	}
 }
+
+.list {
+	display: flex;
+	justify-content: center;
+
+	li {
+		color: $color-text-light-primary;
+		&:nth-child(2) {
+			margin: 0 3.2rem;
+		}
+	}
+}
+
+@media only screen and (max-width: $breakpoint-medium) {
+	.list li:nth-child(2) {
+		margin: 0 2.4rem;
+	}
+}
+@media only screen and (max-width: $breakpoint-small) {
+	.list {
+		flex-direction: column;
+	}
+} // end of whenSmall
