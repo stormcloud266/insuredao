@@ -19,13 +19,15 @@ const Works = () => {
 				</ul>
 			</div>
 			<Container sectionTop className={styles.imageContainer}>
-				<StaticImage
-					src='../../../assets/images/how-it-works.png'
-					alt=''
-					placeholder='blurred'
-					layout='constrained'
-					width={840}
-				/>
+				<Fade triggerOnce>
+					<StaticImage
+						src='../../../assets/images/how-it-works.png'
+						alt=''
+						placeholder='blurred'
+						layout='constrained'
+						width={840}
+					/>
+				</Fade>
 			</Container>
 		</Container>
 	)
