@@ -29,7 +29,7 @@ const Footer = () => {
 					<p className={styles.text}>© 2021 InsureDAO. All Rights Reserved.</p>
 					<div className={styles.socialContainer}>
 						{links.map(({ url, icon }) => (
-							<a href={url} target='_blank' rel='noreferrer'>
+							<a href={url} target='_blank' rel='noreferrer' key={url}>
 								{icon}
 							</a>
 						))}
