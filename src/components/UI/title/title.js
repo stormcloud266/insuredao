@@ -1,5 +1,6 @@
 import React from 'react'
 import classnames from 'classnames'
+import PropTypes from 'prop-types'
 import * as styles from './title.module.scss'
 
 const Title = ({
@@ -72,3 +73,16 @@ const Title = ({
 }
 
 export default Title
+
+Title.propTypes = {
+	tag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p']),
+	center: PropTypes.bool,
+	black: PropTypes.bool,
+	sm: PropTypes.bool,
+	lg: PropTypes.bool,
+	weightMd: PropTypes.bool,
+	margin: PropTypes.bool,
+	className: PropTypes.string,
+	children: PropTypes.node.isRequired,
+	rest: PropTypes.object,
+}

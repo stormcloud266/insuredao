@@ -103,7 +103,7 @@ const Cards = () => {
 										))}
 									</ul>
 								</Fade>
-								<Button href={item.url} className={styles.button} square>
+								<Button href={item.url} className={styles.button}>
 									{item.buttonText} <span>&rarr;</span>
 								</Button>
 							</div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import * as styles from './grid.module.scss'
 
 const Grid = ({ children }) => {
@@ -6,3 +7,7 @@ const Grid = ({ children }) => {
 }
 
 export default Grid
+
+Grid.propTypes = {
+	children: PropTypes.node.isRequired,
+}

@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import classnames from 'classnames'
+import PropTypes from 'prop-types'
 import * as styles from './button.module.scss'
 
 const Button = ({
 	href,
 	to,
-	square,
 	white,
 	green,
 	small,
@@ -15,7 +15,6 @@ const Button = ({
 	...rest
 }) => {
 	const classes = classnames(
-		square && styles.square,
 		white && styles.white,
 		green && styles.green,
 		small && styles.small,
@@ -51,3 +50,14 @@ const Button = ({
 }
 
 export default Button
+
+Button.propTypes = {
+	href: PropTypes.string,
+	to: PropTypes.string,
+	white: PropTypes.bool,
+	green: PropTypes.bool,
+	sm: PropTypes.bool,
+	className: PropTypes.string,
+	children: PropTypes.node.isRequired,
+	rest: PropTypes.object,
+}
