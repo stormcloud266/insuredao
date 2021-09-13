@@ -1,4 +1,5 @@
 import React from 'react'
+import { StaticImage } from 'gatsby-plugin-image'
 import { Fade } from 'react-awesome-reveal'
 import { Container, Title } from '@UI'
 import * as styles from './works.module.scss'
@@ -17,6 +18,15 @@ const Works = () => {
 					<li>InsureDAO Investments</li>
 				</ul>
 			</div>
+			<Container sectionTop className={styles.imageContainer}>
+				<StaticImage
+					src='../../../assets/images/how-it-works.png'
+					alt=''
+					placeholder='blurred'
+					layout='constrained'
+					width={840}
+				/>
+			</Container>
 		</Container>
 	)
 }

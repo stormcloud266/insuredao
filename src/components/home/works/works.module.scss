@@ -20,6 +20,11 @@
 	}
 }
 
+.imageContainer {
+	text-align: center;
+	margin-top: 4.8rem;
+}
+
 @media only screen and (max-width: $breakpoint-medium) {
 	.list li:nth-child(2) {
 		margin: 0 2.4rem;
