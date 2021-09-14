@@ -8,11 +8,13 @@ const Cta = () => {
 		<div className={styles.container}>
 			<Container wrapper>
 				<Fade triggerOnce fraction={0.4}>
-					<Title className={styles.title}>Want product news and updates?</Title>
+					<Title className={styles.title} weightMd>
+						Want product news and updates?
+					</Title>
 				</Fade>
 
 				<Fade triggerOnce fraction={0.4}>
-					<Title className={styles.subtitle} tag='p'>
+					<Title className={styles.subtitle} tag='p' weightMd>
 						Join in with the conversation on Discord...
 					</Title>
 				</Fade>

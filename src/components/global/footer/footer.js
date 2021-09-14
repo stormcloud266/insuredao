@@ -6,12 +6,12 @@ import * as styles from './footer.module.scss'
 const Footer = () => {
 	const links = [
 		{
-			url: 'https://twitter.com/insuredao',
-			icon: <Twitter />,
-		},
-		{
 			url: 'https://medium.com/insuredao',
 			icon: <Medium />,
+		},
+		{
+			url: 'https://twitter.com/insuredao',
+			icon: <Twitter />,
 		},
 		{
 			url: 'https://t.me/joinchat/3UrkC9PvIgg1YTA1',

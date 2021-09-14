@@ -8,16 +8,32 @@
 	}
 }
 
+.title {
+	margin-bottom: 6.8rem;
+}
+
 .list {
 	display: flex;
 	justify-content: center;
 
 	li {
-		color: $color-text-light-primary;
+		font-size: $font-size-24;
 		&:nth-child(2) {
 			margin: 0 3.2rem;
 		}
 	}
+}
+
+.purple {
+	color: $color-purple;
+}
+
+.green {
+	color: $color-green;
+}
+
+.blue {
+	color: $color-blue;
 }
 
 .imageContainer {

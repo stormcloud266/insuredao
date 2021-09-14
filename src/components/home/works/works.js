@@ -8,14 +8,14 @@ const Works = () => {
 	return (
 		<Container wrapper section>
 			<div className={styles.textContainer}>
-				<Fade triggerOnce>
+				<Fade triggerOnce className={styles.title}>
 					<Title lg>How it all works?</Title>
 				</Fade>
 				<p>InsureDAO provides three functions:</p>
 				<ul className={styles.list}>
-					<li>InsureDAO Build</li>
-					<li>InsureDAO Market</li>
-					<li>InsureDAO Investments</li>
+					<li className={styles.purple}>InsureDAO Build</li>
+					<li className={styles.green}>InsureDAO Market</li>
+					<li className={styles.blue}>InsureDAO Investments</li>
 				</ul>
 			</div>
 			<Container sectionTop className={styles.imageContainer}>

@@ -106,7 +106,7 @@ const Team = () => {
 		},
 	]
 	return (
-		<Container wrapper section isSection>
+		<Container wrapper section isSection className={styles.container}>
 			<Title center lg className={styles.title}>
 				Meet the team
 			</Title>
