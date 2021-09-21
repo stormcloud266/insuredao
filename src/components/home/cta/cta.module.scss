@@ -1,11 +1,15 @@
 @import '../../global/layout/variables';
 
 .container {
-	padding-top: 5.2rem;
-	padding-bottom: 30rem;
-	background-image: url(../../../assets/images/InsureDAO_footer.jpg);
-	background-position: center bottom;
+	// padding-top: 5.2rem;
+	// padding-bottom: 30rem;
+	background-image: url(../../../assets/images/InsureDAO_footer2.jpg);
+	background-position: center top;
 	background-size: cover;
+
+	height: 65rem;
+	display: flex;
+	align-items: center;
 }
 
 .title {
