@@ -59,7 +59,7 @@ const Cards = () => {
 		},
 		{
 			color: 'purple',
-			type: 'Buyers',
+			type: 'Protocols',
 			title: 'Make your protocol secure & reliable',
 			body: (
 				<>
@@ -81,7 +81,7 @@ const Cards = () => {
 	]
 
 	return (
-		<Container wrapperSmOnMd sectionBottom>
+		<Container wrapperSmOnMd sectionBottom isSection>
 			<Flex autoLayout collapseOnMd>
 				{data.map((item) => {
 					const classes = classnames(styles[item.color], styles.card)

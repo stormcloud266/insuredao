@@ -5,7 +5,7 @@ import * as styles from './cta.module.scss'
 
 const Cta = () => {
 	return (
-		<div className={styles.container}>
+		<section className={styles.container}>
 			<Container wrapper>
 				<Fade triggerOnce fraction={0.4}>
 					<Title className={styles.title} weightMd>
@@ -27,7 +27,7 @@ const Cta = () => {
 					Join Us...
 				</Button>
 			</Container>
-		</div>
+		</section>
 	)
 }
 

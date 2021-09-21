@@ -6,7 +6,7 @@ import * as styles from './hero.module.scss'
 
 const Hero = () => {
 	return (
-		<div className={styles.container}>
+		<section className={styles.container}>
 			<div className={styles.background}>
 				<StaticImage
 					src='../../../assets/images/InsureDAO_hero.png'
@@ -39,7 +39,7 @@ const Hero = () => {
 					</Button>
 				</div>
 			</Container>
-		</div>
+		</section>
 	)
 }
 

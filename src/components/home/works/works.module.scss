@@ -15,6 +15,7 @@
 .list {
 	display: flex;
 	justify-content: center;
+	margin-top: 2rem;
 
 	li {
 		font-size: $font-size-24;
@@ -22,18 +23,6 @@
 			margin: 0 3.2rem;
 		}
 	}
-}
-
-.purple {
-	color: $color-purple;
-}
-
-.green {
-	color: $color-green;
-}
-
-.blue {
-	color: $color-blue;
 }
 
 .imageContainer {

@@ -24,7 +24,7 @@ const Partners = () => {
 		},
 	]
 	return (
-		<Container wrapper section>
+		<Container wrapper section isSection>
 			<Title sm weightMd className={styles.title}>
 				Partnered with:
 			</Title>

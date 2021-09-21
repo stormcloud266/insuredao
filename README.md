@@ -2,9 +2,17 @@
 
 ## Set Up
 
-1. install dependencies `yarn`
-2. start development `yarn develop`
-3. build project `yarn build`
+1. git clone
+2. cd insuredao
+3. install dependencies `yarn`
+
+### Development
+
+`yarn develop`
+
+### Build
+
+`yarn build` will generate `public/` directory with your project
 
 ## Info
 

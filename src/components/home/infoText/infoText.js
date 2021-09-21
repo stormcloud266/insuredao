@@ -10,7 +10,7 @@ const InfoText = () => {
 			<Flex>
 				<div className={styles.textContainer}>
 					<Fade triggerOnce fraction={0.2}>
-						<Title margin>
+						<Title className={styles.title}>
 							Insurance is the masterpiece of DeFi scalability - we stabilize
 							the entire ecosystem
 						</Title>

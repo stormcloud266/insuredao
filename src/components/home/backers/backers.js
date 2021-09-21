@@ -64,7 +64,7 @@ const Backers = () => {
 		},
 	]
 	return (
-		<Container wrapper sectionTop>
+		<Container wrapper sectionTop isSection>
 			<Title sm weightMd className={styles.title}>
 				Backed by:
 			</Title>

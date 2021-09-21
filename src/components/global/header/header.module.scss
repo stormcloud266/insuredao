@@ -1,7 +1,6 @@
 @import '../../global/layout/variables';
 
 .header {
-	// positioning
 	position: absolute;
 	top: 4rem;
 	left: 0;
@@ -20,10 +19,9 @@
 	position: relative;
 	z-index: 1000;
 
-	svg {
-		fill: white;
+	img {
 		width: 100%;
-		max-width: 12rem;
+		max-width: 16rem;
 		display: block;
 	}
 }
