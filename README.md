@@ -19,4 +19,5 @@ Generates a `public/` directory with your production ready site.
 ## Info
 
 Site is built with [GatsbyJS](https://www.gatsbyjs.com/)
+
 `yarn clean` will delete .cache and public/ if you are experiencing problems during development
